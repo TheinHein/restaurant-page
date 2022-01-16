@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  width: 80%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 2em;
+}
+
+.nav {
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  width: 80%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav > div {
+  cursor: pointer;
+}
+
+.nav div:hover,
+.nav div:focus {
+  color: rgb(255, 0, 0);
+}
+
+.content {
+  margin: 0 auto;
+  width: 80%;
+  flex: 2 1 auto;
+}
+
+.main {
+  border: 1px solid goldenrod;
+  text-align: center;
+}
+
+.welcome {
+  font-size: 3em;
+  margin: 40px;
+}
+
+.main div:nth-child(3) {
+  margin: 20px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.image2 {
+  width: 350px;
+}
+
+.container {
+  display: flex;
+  margin: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.container div:last-child {
+  text-align: left;
+  flex: 1 1 300px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form input {
+  width: 40%;
+  height: 30px;
+}
+
+.form button {
+  width: 20%;
+  height: 25px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.menu-item div:last-child,
+.menu-item div:first-child {
+  flex: 1 1 300px;
+}
+.menu-image {
+  width: 250px;
+  height: 200px;
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 20px;
+  margin-top: 3px;
+}
